@@ -6,27 +6,31 @@ import numpy as np
 from torch.autograd import Variable
 from torch.nn.utils import clip_grad_norm
 
-from agent.agent_type import AgentType
-from agent.model.ac_model import ActorCriticModel
-from agent.storage import RolloutStorage
+from agent_type import AgentType
+from ac_model import ActorCriticModel
+from storage import RolloutStorage
 from config import args
-from utils.torch_functions import cuda, temperature_softmax
+from torch_functions import cuda, temperature_softmax
 
 
 class VecAgent:
     def __init__(self, agent_type, acting):
-        dummy_env = gym.make('GridWorldEnv-v0')  # just to extract observation/action space
+        # dummy_env = gym.make('GridWorldEnv-v0')  # just to extract observation/action space
 
         self.n_processes = args.num_processes
         self.vocab_size = args.vocab_size
         self.rollouts = RolloutStorage(args.num_steps, args.num_processes)
-        self.action_space = dummy_env.action_space.n
+        self.action_space = 6 # from environment/action.py
         self.n_steps = args.num_steps
         self.sentence_len = args.sentence_len
         self.agent_type = agent_type
         self.acting = acting
 
-        obs_shape, inventory_shape = dummy_env.observation_space
+        obs_shape, inventory_shape = (
+            # Based on aping what's in environment/grid_world_env.py, using values from config.py
+            (5 * 3, 5 * 3, 3),  # observation
+            (5 * 3, 3, 3)   # inventories
+        )
 
         self.model = cuda(ActorCriticModel(obs_shape, inventory_shape, self.action_space, self.vocab_size,
                                            self.sentence_len, agent_type, acting))

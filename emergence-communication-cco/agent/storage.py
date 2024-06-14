@@ -1,5 +1,5 @@
 import torch
-from utils.torch_functions import cuda
+from torch_functions import cuda
 import numpy as np
 
 

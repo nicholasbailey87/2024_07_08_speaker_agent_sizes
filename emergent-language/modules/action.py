@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 
-from modules.processing import ProcessingModule
-from modules.gumbel_softmax import GumbelSoftmax
+from processing import ProcessingModule
+from gumbel_softmax import GumbelSoftmax
 
 """
     An ActionModule takes in the physical observation feature vector, the

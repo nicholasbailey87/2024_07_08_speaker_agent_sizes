@@ -41,7 +41,7 @@ def read():
     parser.add_argument('-useGPU', dest='useGPU', action='store_true')
 
     try:
-      parsed = vars(parser.parse_args())
+      parsed = vars(parser.parse_args([]))
     except IOError as err:
       parser.error(str(err))
 

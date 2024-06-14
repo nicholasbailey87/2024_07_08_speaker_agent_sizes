@@ -4,7 +4,7 @@
 import torch
 import sys, json, pdb, math
 sys.path.append('../')
-from html import HTML
+# from html import HTML
 
 # Initializing weights
 def initializeWeights(moduleList, itype):

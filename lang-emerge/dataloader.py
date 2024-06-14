@@ -19,7 +19,7 @@ class Dataloader:
             print('Creating empty dataloader!')
             return
 
-        self.loadDataset(params['dataset'])
+        self.loadDataset("data/toy64_split_0.8.json") # (params['dataset'])
         ####################### Create attributes #########################
         numVals = {attr:len(vals) for attr, vals in self.props.items()}
         self.attrValVocab = functools.reduce(lambda x, y: x + y,

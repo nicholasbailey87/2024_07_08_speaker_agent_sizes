@@ -2,10 +2,10 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 
-from modules.processing import ProcessingModule
-from modules.goal_predicting import GoalPredictingProcessingModule
-from modules.action import ActionModule
-from modules.word_counting import WordCountingModule
+from processing import ProcessingModule
+from goal_predicting import GoalPredictingProcessingModule
+from action import ActionModule
+from word_counting import WordCountingModule
 
 
 """

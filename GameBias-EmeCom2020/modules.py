@@ -41,6 +41,16 @@ class BaseSender(nn.Module):
                 kaiming_init(m)
 
 
+
+class View(nn.Module):
+    def __init__(self, size):
+        super(View, self).__init__()
+        self.size = size
+
+    def forward(self, x):
+        return x.view(self.size)
+
+
 class DspritesSenderCNN(BaseSender):
     """The specific CNN sender for dSprite images."""
     

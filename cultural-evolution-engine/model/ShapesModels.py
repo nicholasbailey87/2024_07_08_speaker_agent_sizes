@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from torch.distributions.categorical import Categorical
-from .gumbel import gumbel_softmax
-from .DARTSCell import DARTSCell
+from gumbel import gumbel_softmax
+from DARTSCell import DARTSCell
 
 
 class ShapesMetaVisualModule(nn.Module):

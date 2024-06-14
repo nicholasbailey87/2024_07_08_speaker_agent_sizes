@@ -14,40 +14,40 @@ import utils
 parser = argparse.ArgumentParser()
 
 # params to vary
-parser.add_argument('--num-binary-messages', type=int, default=24)
-parser.add_argument('--seed', type=int, default=0)
+#('--num-binary-messages', type=int, default=24)
+#('--seed', type=int, default=0)
 
 # problem size
-parser.add_argument('--batch-size', type=int, default=100)
-parser.add_argument('--num-digits', type=int, default=6)
-parser.add_argument('--signature-size', type=int, default=2)
+#('--batch-size', type=int, default=100)
+#('--num-digits', type=int, default=6)
+#('--signature-size', type=int, default=2)
 
 # network params
-parser.add_argument('--embedding-size-sender', type=int, default=40)
-parser.add_argument('--project-size-sender', type=int, default=60)
-parser.add_argument('--num-lstm-sender', type=int, default=300)
-parser.add_argument('--num-lstm-receiver', type=int, default=325)
-parser.add_argument('--embedding-size-receiver', type=int, default=125)
+#('--embedding-size-sender', type=int, default=40)
+#('--project-size-sender', type=int, default=60)
+#('--num-lstm-sender', type=int, default=300)
+#('--num-lstm-receiver', type=int, default=325)
+#('--embedding-size-receiver', type=int, default=125)
 
 # optimization params
-parser.add_argument('--learning-rate', type=float, default=3e-4)
-parser.add_argument('--weight-decay', type=float, default=1e-4)
-parser.add_argument('--output-loss-penalty', type=float, default=1)
-parser.add_argument('--weight-norm-penalty', type=float, default=1e-4)
-parser.add_argument('--temp', type=float, default=1)
-parser.add_argument('--max-iters', type=int, default=200000)
-parser.add_argument('--train-acc', type=float, default=0.60)
-parser.add_argument('--trainval-acc', type=float, default=0.60)
+#('--learning-rate', type=float, default=3e-4)
+#('--weight-decay', type=float, default=1e-4)
+#('--output-loss-penalty', type=float, default=1)
+#('--weight-norm-penalty', type=float, default=1e-4)
+#('--temp', type=float, default=1)
+#('--max-iters', type=int, default=200000)
+#('--train-acc', type=float, default=0.60)
+#('--trainval-acc', type=float, default=0.60)
 # logging/printing
-parser.add_argument('--test', action='store_true')
-parser.add_argument('--trainval-interval', type=int, default=50)
-parser.add_argument('--model-dir', default=None)
-parser.add_argument('--save-str', default='')
-parser.add_argument('--log-dir', type=str, default="./logs")
-parser.add_argument('--save-dir', type=str, default="./models")
+#('--test', action='store_true')
+#('--trainval-interval', type=int, default=50)
+#('--model-dir', default=None)
+#('--save-str', default='')
+#('--log-dir', type=str, default="./logs")
+#('--save-dir', type=str, default="./models")
 
-varparams = parser.parse_args()
-opts = vars(varparams)
+# varparams = parser.parse_args()
+# opts = vars(varparams)
 
 
 class CompCap(nn.Module):

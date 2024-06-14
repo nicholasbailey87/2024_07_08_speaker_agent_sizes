@@ -45,7 +45,7 @@ parser.add_argument('--valid_num',type=int,default=8,help='size of validation se
 parser.add_argument('--max_gen',type=int,default=80,help='max generations')
 parser.add_argument('--pairs_teach',type=int,default=100,help='sampled pairs for listener pretrain')
 
-args = parser.parse_args()
+args = parser.parse_args([])
 
 
 

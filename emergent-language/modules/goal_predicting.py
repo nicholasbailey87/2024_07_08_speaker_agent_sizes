@@ -1,5 +1,5 @@
 import torch.nn as nn
-from modules.processing import ProcessingModule
+from processing import ProcessingModule
 
 """
     A GoalPredictingProcessingModule acts like a regular processing module but
