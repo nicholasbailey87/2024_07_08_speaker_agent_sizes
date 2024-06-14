@@ -1,0 +1,66 @@
+[submodule "lang-emerge"]
+	path = lang-emerge
+	url = https://github.com/batra-mlp-lab/lang-emerge.git
+[submodule "emergent-language"]
+	path = emergent-language
+	url = https://github.com/bkgoksel/emergent-language.git
+[submodule "emergence-communication-cco"]
+	path = emergence-communication-cco
+	url = https://github.com/benbogin/emergence-communication-cco.git
+[submodule "obverter"]
+	path = obverter
+	url = https://github.com/benbogin/obverter.git
+[submodule "evolang"]
+	path = evolang
+	url = https://github.com/mcogswell/evolang.git
+[submodule "Ease-of-teaching-and-language-structure"]
+	path = Ease-of-teaching-and-language-structure
+	url = https://github.com/FushanLi/Ease-of-teaching-and-language-structure.git
+[submodule "Neural_Iterated_Learning"]
+	path = Neural_Iterated_Learning
+	url = https://github.com/Joshua-Ren/Neural_Iterated_Learning.git
+[submodule "EGG"]
+	path = EGG
+	url = https://github.com/facebookresearch/EGG.git
+[submodule "cultural-evolution-engine"]
+	path = cultural-evolution-engine
+	url = https://github.com/gautierdag/cultural-evolution-engine.git
+[submodule "GameBias-EmeCom2020"]
+	path = GameBias-EmeCom2020
+	url = https://github.com/Shawn-Guo-CN/GameBias-EmeCom2020.git
+[submodule "cbc-emecom"]
+	path = cbc-emecom
+	url = https://github.com/backpropper/cbc-emecom.git
+[submodule "emergent_grammar_induction"]
+	path = emergent_grammar_induction
+	url = https://github.com/i-machine-think/emergent_grammar_induction.git
+[submodule "emergent_communication_at_scale"]
+	path = emergent_communication_at_scale
+	url = https://github.com/google-deepmind/emergent_communication_at_scale.git
+[submodule "Interaction-history-as-a-source-of-compositionality"]
+	path = Interaction-history-as-a-source-of-compositionality
+	url = https://github.com/tomekkorbak/Interaction-history-as-a-source-of-compositionality.git
+[submodule "emergent-generalization"]
+	path = emergent-generalization
+	url = https://github.com/jayelm/emergent-generalization.git
+[submodule "neural-ilm"]
+	path = neural-ilm
+	url = https://github.com/asappresearch/neural-ilm.git
+[submodule "texrel"]
+	path = texrel
+	url = https://github.com/asappresearch/texrel.git
+[submodule "disentangling_categorization"]
+	path = disentangling_categorization
+	url = https://github.com/FICS/disentangling_categorization.git
+[submodule "hierarchical_reference_game"]
+	path = hierarchical_reference_game
+	url = https://github.com/XeniaOhmer/hierarchical_reference_game.git
+[submodule "Population"]
+	path = Population
+	url = https://github.com/MathieuRita/Population.git
+[submodule "variable_compositionality"]
+	path = variable_compositionality
+	url = https://github.com/hcoxec/variable_compositionality.git
+[submodule "emecom_SignalingGame_as_betaVAE"]
+	path = emecom_SignalingGame_as_betaVAE
+	url = https://github.com/mynlp/emecom_SignalingGame_as_betaVAE.git
