@@ -1,0 +1,17 @@
+{
+	"trainer_type":"population",
+	"n_epochs":2000,	
+	"device":"cuda",
+	"batch_size":2048,
+	"train_batches_per_epoch":200,
+        "val_batches_per_epoch":10,
+        "test_batches_per_epoch":10,
+	"seed":1999,
+	"train_communication_freq":1,
+	"validation_freq":1,
+	"evaluator_freq":1,
+	"save_models_freq":1000,
+	"metrics_to_measure":{"topographic_similarity":10,
+			    "language_similarity":10}
+}
+

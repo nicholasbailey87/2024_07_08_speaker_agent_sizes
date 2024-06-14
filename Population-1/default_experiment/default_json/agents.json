@@ -1,0 +1,52 @@
+{
+"sender_default_reco" : {
+		  	"sender":1,
+		  	"receiver":0,
+
+		  	"sender_params":{"sender_type":"recurrent",
+				  "sender_cell":"LSTM",
+		  		  "sender_num_layers":1,
+		  		  "sender_hidden_size":128,
+		  		  "sender_embed_dim":128
+				  },
+
+			"prob_reset":0,
+
+			"tasks":{"communication":{"optimizer":"adam",
+		  			   "loss":{"type":"REINFORCE",
+					        	   "reward":"log",
+						   "baseline":"normalization_batch",
+						   "entropy_reg_coef":0.1},
+		  			   "p_step":0.05,
+		  			   "lr":0.0005
+		  			   }
+				},
+
+			"weights":{"communication":1,"MI":0},
+		  	"dataset": {"distribution":"uniform"}
+		  
+		  },
+
+"receiver_default_reco" : {
+		    "sender":0,
+		    "receiver":1,
+		    "receiver_params":{"receiver_type":"recurrent",
+				      "receiver_cell":"LSTM",
+		    		      "receiver_num_layers":1,
+		    		      "receiver_hidden_size":128,
+		    		      "receiver_embed_dim":128
+				      },
+
+		    "prob_reset":0,
+
+                    "tasks":{"communication":{"optimizer":"adam",
+                                           "loss":{"type":"cross_entropy"},
+                                           "p_step":1,
+                                           "lr":0.0005
+                                           }
+                            },
+
+		    "dataset": {"distribution":"uniform"}
+		    
+		    }
+}

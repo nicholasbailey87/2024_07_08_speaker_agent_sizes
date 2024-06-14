@@ -1,0 +1,61 @@
+CLEVR data:
+python clevr_data/run_cube_color_generation.py --num_examples 10000 --width 64 --height 64 --sizes small:0.7,large:1.4 --min_pixels_per_object 40 --render_num_samples 256 --ref dsd10_onecoloredshape  --blender-script gen_ilm_multiobj_v2.py --examples-per-batch 32 --shapes cube
+python data_code/clevr/cube_is_color_dataprep_2d.py --ds-ref dsd10_onecoloredshape
+
+GL data:
+python data_code/objects_gl/generate.py --object-size 0.8 --ref dsd40_2s_mini --shapes cube,sphere --num-train 512
+
+Run ILM:
+python ilm/test_cube_color_sup.py --ref dsd7_cubecolors4
+./ilm2 -s 2 --link Softmax --seed 5 --ref rt430 --ilm 100,100
+
+python mll/ilm_rnn2018janb.py --ref ilmc216 --sup-train-steps 2000 --e2e-train-steps 500000 --meanings 5x10 --max-episodes 5 --dropout 0.5 --link RL --rl-reward count_meanings
+python mll/ilm_ga.py --ref ilmc166 --sup-train-steps 2000 --e2e-train-steps 500000 --meanings 5x10 --max-episodes 50 --dropout 0.5 --link RL --rl-reward count_meanings --student-compare-key e2e_acc
+
+
+
+
+refs:
+ilmc142
+ilmc148
+
+ilmc70,71,72,ilmb63
+ilmb84,ilmc46,58
+ilmb86,ilmc47,59
+ilmb87,ilmc68,60
+limb149,ilmb159,ilmb160
+ilmc150,ilmc161,ilmc162
+ilmc152
+ilmc153
+
+ilmc143
+ilmc148  python mll/ilm_rnn2018janb.py --ref ilmc148 --sup-train-steps 2000 --e2e-train-steps 500000  --meanings 2x33 --max-episodes 5 --dropout 0.5
+
+ilmc78
+
+ilmb156,ilmb163,ilmb164
+ilmc157
+
+
+rt76,rt78,rt80,rt82,rt92 (and rt72?)
+rt76,rt78,rt80,rt82,rt92
+rt76,rt78,rt80,rt82,rt92
+rt73,rt101,rt106
+
+
+rt73,rt101,rt106
+rt73,rt101,rt106
+rt75
+rt75
+rt75
+rt99,rt105,rt107
+rt100
+rt84,rt102,rt108
+rt84,rt102,rt108
+rt102,rt108
+rt68,rt77,(rt87),rt92
+rt89,rt94,rt96
+rt90
+(rt83),rt93,rt95,rt97
+(rt88),rt91
+(rt84),rt98,rt103,rt104

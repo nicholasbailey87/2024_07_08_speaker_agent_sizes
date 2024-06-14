@@ -1,0 +1,20 @@
+{
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "none",
+    "python.formatting.blackArgs": [
+        "--line-length=120"
+    ],
+    "github.gitProtocol": "ssh",
+    "python.analysis.typeCheckingMode": "strict",
+    "python.languageServer": "Pylance",
+    "python.analysis.extraPaths": [
+        "./emecom_gen"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.importFormat": "relative",
+    "notebook.output.textLineLimit": 100
+}
