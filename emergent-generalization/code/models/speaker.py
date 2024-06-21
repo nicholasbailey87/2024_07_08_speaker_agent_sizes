@@ -10,7 +10,7 @@ from torch.nn import functional as F
 from torch.distributions import Gumbel
 
 import data
-import data.language
+import language
 
 
 class CopySpeaker(nn.Module):

@@ -2,10 +2,10 @@ from typing import Union
 import torch
 from torch import nn
 
-from ref_task.models import (
-    image_seq_embedders, sender_model as sender_model_lib, decoders,
-    pre_conv as pre_conv_lib)
-
+import image_seq_embedders
+import sender_model as sender_model_lib
+import decoders
+import pre_conv as pre_conv_lib
 
 class SenderModel(nn.Module):
     """

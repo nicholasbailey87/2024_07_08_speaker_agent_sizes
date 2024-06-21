@@ -5,7 +5,7 @@ import torch
 import sys
 import re
 import json
-import _jsonnet
+# import _jsonnet
 import attr
 import random
 import numpy as np

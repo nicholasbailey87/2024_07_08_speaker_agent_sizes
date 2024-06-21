@@ -4,7 +4,7 @@ from torch import nn
 import torch.nn.functional as F
 from tqdm import tqdm
 
-from common.data import prepare_datasets
+from data import prepare_datasets
 
 
 class Vision(nn.Module):

@@ -12,7 +12,7 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 
-from ulfs import utils
+import utils
 
 
 class PreConv(torch.nn.Module, abc.ABC):

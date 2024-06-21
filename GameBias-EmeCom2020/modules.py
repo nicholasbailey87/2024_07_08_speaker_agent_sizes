@@ -2,10 +2,8 @@ from abc import ABCMeta, abstractmethod, abstractstaticmethod
 
 import torch
 import torch.nn as nn
+import torch.nn.init as init
 import egg.core as core
-
-from utils import View, kaiming_init
-
 
 class BaseGame(metaclass=ABCMeta):
     hidden_size = 256
@@ -40,7 +38,15 @@ class BaseSender(nn.Module):
             for m in self._modules[block]:
                 kaiming_init(m)
 
-
+def kaiming_init(m):
+    if isinstance(m, (nn.Linear, nn.Conv2d)):
+        init.kaiming_normal(m.weight)
+        if m.bias is not None:
+            m.bias.data.fill_(0)
+    elif isinstance(m, (nn.BatchNorm1d, nn.BatchNorm2d)):
+        m.weight.data.fill_(1)
+        if m.bias is not None:
+            m.bias.data.fill_(0)
 
 class View(nn.Module):
     def __init__(self, size):

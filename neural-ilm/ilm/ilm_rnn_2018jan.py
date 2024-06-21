@@ -36,8 +36,8 @@ class AgentModel(nn.Module):
         self.max_utterance_len = max_utterance_len
 
         self.meaning_embeddings = nn.ModuleList()
-        for i in range(num_meanings):
-            self.meaning_embeddings.append(nn.Embedding(meaning_size, embedding_size))
+        for i in range(self.num_meaning_types):
+            self.meaning_embeddings.append(nn.Embedding(self.meanings_per_type, self.embedding_size))
         # self.rnn = nn.LSTMCell(embedding_size, embedding_size)
         self.rnn = nn.LSTMCell(embedding_size, embedding_size)
         self.enable_cuda = False

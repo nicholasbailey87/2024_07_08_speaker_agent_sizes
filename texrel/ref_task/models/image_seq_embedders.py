@@ -18,9 +18,10 @@ from torch import nn
 from typing import List, Optional
 import torch.nn.functional as F
 
-from ulfs import nn_modules, tensor_utils
-from ref_task.models import conv_models
-from ref_task.models.image_seq_embedder_base import ImageSeqEmbedder
+import nn_modules
+import tensor_utils
+import conv_models
+from image_seq_embedder_base import ImageSeqEmbedder
 
 
 class RNNOverCNN(ImageSeqEmbedder):

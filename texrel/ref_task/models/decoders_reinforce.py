@@ -12,8 +12,8 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 
-from ulfs import rl_common
-from ulfs.stochastic_trajectory import StochasticTrajectory
+import rl_common
+from stochastic_trajectory import StochasticTrajectory
 
 
 class StochasticDecoder(nn.Module, abc.ABC):

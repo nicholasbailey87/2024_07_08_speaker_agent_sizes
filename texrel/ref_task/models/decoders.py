@@ -1,6 +1,6 @@
-from ref_task.models import decoders_differentiable, decoders_reinforce
-from ref_task.models.decoders_differentiable import DifferentiableDecoder
-from ref_task.models.decoders_reinforce import StochasticDecoder
+import decoders_differentiable, decoders_reinforce
+from decoders_differentiable import DifferentiableDecoder
+from decoders_reinforce import StochasticDecoder
 
 
 # def build_decoder(params, use_reinforce: bool, utt_len: int, vocab_size: int):
