@@ -1,0 +1,12 @@
+fsspec==2024.6.1
+huggingface-hub==0.24.0
+intel-openmp==2021.4.0
+mkl==2021.4.0
+regex==2024.5.15
+safetensors==0.4.3
+tbb==2021.13.0
+tokenizers==0.19.1
+torchaudio==2.3.1
+torchvision==0.18.1
+tqdm==4.66.4
+transformers==4.42.4
