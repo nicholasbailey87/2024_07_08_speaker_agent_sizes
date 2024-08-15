@@ -44,6 +44,18 @@ You can then open Jupyter Lab with
 jupyter lab
 ```
 
-In the **Kernel** menu, choose **Restart kernel and run all cells** and this should build a dataset called output.csv
+In order to successfully run the code for "18. Disentangling Categorization in Multi-agent Emergent Communication", you will need to download the checkpoints as described in the **Checkpoints (download)** section on this page: https://github.com/FICS/disentangling_categorization
+
+You should take the contents of
+
+`percept_ckpt_041922-211456\ckpt\autotrain\CW\cub10\111021-233542\seed-0\resnet50_cw\0`
+
+from the downloaded zip directory and put it in
+
+`2024_05_12_speaker_agent_sizes\disentangling_categorization\ckpt\autotrain\CW\cub10\111021-233542\seed-0\resnet50_cw\0`
+
+in this repository.
+
+When the above is completed, you should be able to run the notebook. In the **Kernel** menu, choose **Restart kernel and run all cells** and this should build a dataset called output.csv
 
 The process can take a while, but Jupyter Lab should indicate that it is still working.

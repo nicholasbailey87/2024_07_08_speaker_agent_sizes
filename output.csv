@@ -3,7 +3,7 @@ Natural language does not emerge ’naturally’ in multi-agent dialog,29885,5
 Emergence of Grounded Compositional Language in Multi-Agent Populations,1870105,7
 Emergence of Communication in an Interactive World with Consistent Speakers,45253,5
 Compositional Obverter Communication Learning From Raw Visual Input,64676,5
-Emergence of Compositional Language with Deep Generational Transmission,99255,5
+Emergence of Compositional Language with Deep Generational Transmission,107956,6
 The Emergence of Compositional Languages for Numeric Concepts Through Iterated Learning in Neural Agents,6264858,7
 Ease-of-Teaching and Language Structure from Emergent Communication,46108,5
 Compositional Languages Emerge in a Neural Iterated Learning Model,73872,5
@@ -11,15 +11,16 @@ Compositionality and Generalization in Emergent Languages,1153600,7
 Co-evolution of language and agents in referential games,1696909,7
 Inductive Bias and Language Expressivity in Emergent Communication,443584,6
 "Capacity, Bandwidth, and Compositionality in Emergent Language Learning",670982,6
-The Grammar of Emergent Languages,6722000,7
-Emergent Communication at Scale,1328870,7
+Emergent Communication at Scale (exclude resnet),1328870,7
+Emergent Communication at Scale (include resnet),26885902,8
 Interaction history as a source of compositionality in emergent communication,2214370,7
 Emergent communication of generalizations,11524635,8
 "Compositionality Through Language Transmission, using Artificial Neural Networks",23304,5
 TexRel: a Green Family of Datasets for Emergent Communications on Relations,132293,6
 Disentangling Categorization in Multi-agent Emergent Communication,24379280,8
 Emergence of hierarchical reference systems in multi-agent communication,141056,6
-Emergent Communication: Generalization and Overfitting in Lewis Games,135306,6
+Emergent Communication: Generalization and Overfitting in Lewis Games (exclude resnet),135306,6
+Emergent Communication: Generalization and Overfitting in Lewis Games (include resnet),25692338,8
 On the Correspondence between Compositionality and Imitation in Emergent Neural Communication,106880,6
 Compositionality with Variation Reliably Emerges in Neural Networks,17810,5
 On the Word Boundaries of Emergent Languages Based on Harris's Articulation Scheme,1153600,7

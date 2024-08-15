@@ -3,25 +3,25 @@ from abc import ABCMeta, abstractmethod, abstractstaticmethod
 import torch
 import torch.nn as nn
 import torch.nn.init as init
-import egg.core as core
+# import egg.core as core
 
-class BaseGame(metaclass=ABCMeta):
-    hidden_size = 256
-    emb_size = 256
-    vocab_size = 7
-    max_len = 3
-    game_size = 2
-    batch_size = 64
+# class BaseGame(metaclass=ABCMeta):
+#     hidden_size = 256
+#     emb_size = 256
+#     vocab_size = 7
+#     max_len = 3
+#     game_size = 2
+#     batch_size = 64
     
-    # parameters for symbolic game
-    n_attributes = 3
-    n_values = 6
+#     # parameters for symbolic game
+#     n_attributes = 3
+#     n_values = 6
 
-    def __init__(self):
-        self.opts = core.init()
+#     def __init__(self):
+#         self.opts = core.init()
 
-    def train(self, num_epochs:int):
-        self.trainer.train(num_epochs)
+#     def train(self, num_epochs:int):
+#         self.trainer.train(num_epochs)
 
 
 class BaseSender(nn.Module):
