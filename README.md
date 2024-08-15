@@ -17,7 +17,7 @@ If you spot a mistake in the way we are running a study that you were involved w
 
 ## Getting started instructions for Windows
 
-(Hopefully these are clear enough that you can adapt them to your favourite OS if it's not Windows)
+Unfortunately, the code in this repository can only be run on Windows and this seems to relate to how Conda works. We apologise for any inconvenience this may cause.
 
 To prepare an environment to run agent_sizes.ipynb, first install miniconda and create a conda environment with Python v3.8 in the terminal:
 
@@ -31,7 +31,7 @@ Activate the environment
 conda activate agent_sizes
 ```
 
-Then run the following commands to install requirements:
+Having cloned this repository and navigated to the top directory of it in your terminal, run the following commands to install requirements:
 
 ```
 conda install -y --file conda_requirements.txt -c conda-forge -c nvidia -c pytorch

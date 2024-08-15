@@ -12,7 +12,7 @@ import torch
 from torch import nn
 from torch.distributions import Categorical
 
-from parlai.core.agents import Agent
+from agents import Agent
 
 
 def xavier_init(module):
